@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>縁-えにし- Home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+     <!-- JQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- font -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'pxd1elm',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+</head>
+
+<body class="fade">
+    <div class="barHeader">
+        <div class="menuBar">
+
+            <div class="barMenuLogo">
+                <img src="images/icon/Enishi_LOGO.svg" alt="Logo">
+            </div>
+
+            <div class="responsiveLogo">
+                <img src="images/icon/Enishi_LOGO_NoText.svg" alt="Logo">
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navAndicon">
+                <div class="menuBarNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <!-- <li><a href="news.html">news</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="barSNS-icon">
+                    <a class="barSNStile" href="#"><img src="images/icon/X_logo.svg" alt="X_icon"></a>
+                    <a class="barSNStile" href=""><img src="images/icon/Instagram_Glyph_White.svg"alt="Instagram_icon"></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="headerImage">
+        <img src="images/headerImage02.jpg" alt="image01">
+    </div>
+
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="contentsTitle">
+                <h2>縁-えにし-について</h2>
+                <h3>about -Enishi-</h3>
+            </div>
+
+            <div class="contents">
+                <div class="contentsTitle">
+                    <h3>「縁-えにし-」は、人と人、心と心を繋ぐ場所を目指します。</h3>
+                </div>
+                
+                <p class="pHonbun">日本の伝統的なお菓子である和スイーツを、現代の完成と調和させた<br>
+                    新しいスタイルでお届けするテイクアウト専門店です。</p>
+
+                <p class="pHonbun">「縁-えにし-」には、私たちがお届けするスイーツを通じて<br>
+                    お客様同士や地域との"縁"をつなぎたいという願いが込められています。</p>
+
+                <p class="pHonbun">また、和室の「縁側」に腰を掛けてほっと一息つくような、<br>
+                    心地よい時間を提供したいという想いも表しています。</p>
+
+                <p class="pHonbun">名古屋造形大学の学生や教職員の方々は勿論、<br>
+                    地域の皆様や訪れる方々にとってふらりと立ち寄りたくなる場所になることを願っています。</p>
+
+                <p class="pHonbun">季節の移ろいを感じられる和菓子や、日本茶、和ラテなどを取り揃え、皆様をお迎えいたします。</p>
+
+                <p class="pHonbun">日々の忙しさから少しだけ離れて、心和むひとときをお楽しみください。</p>
+
+                <p class="pHonbun">皆様とのご縁を楽しみにしております。</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footerContainer">
+            <img class="footerLogo" src="images/icon/Enishi_LOGO.svg" alt="">
+
+            <div class="footerContents">
+                <div class="footerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <!-- <li><a href="news.html">News</a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footerContents">
+            <div class="address">
+                <p>〒462-0846 愛知県名古屋市北区名城2丁目4番1</p>
+                <p>名古屋造形大学内</p>
+            </div>
+            <p class="copy-r">©2024 Enishi</p>
+        </div>
+
+    </div>
+
+    <script>
+        $('.hamburger').click(function () {
+            $('.navAndicon').toggleClass('viewMenu');
+            $('.hamburger').toggleClass('hamburgerClose');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,59 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>縁-えにし- Home</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta name="keywords" content="愛知, 名古屋, 大学, 名古屋造形大学, スイーツ, 和スイーツ, 和菓子, テイクアウト,">
+    <meta name="description" content="「縁-えにし-」は、名古屋造形大学内にオープンした和スイーツ専門店です。">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="CSS/common.css">
     <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <!-- font -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'pxd1elm',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
 </head>
 
-<body>
-    <header>
-        <nav class="menu_bar">
-            <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <div class="header_logo"><img src="img/Enishi_LOGO.svg" alt="logo"></div>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="infomation.html">INFOMATION</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="fade">
+    <div class="header">
 
-    <div class="slickImages">
-        <div><img src="img/AdobeStock_594389589.jpeg" alt="slick01"></div>
-        <div><img src="#" alt="slick02"></div>
-        <div><img src="#" alt="slick03"></div>
+        <div class="sideMenu">
+
+            <div class="menuLogo">
+                <img src="images/icon/Enishi_LOGO.svg" alt="Logo">
+            </div>
+
+            <div class="responsiveLogo">
+                <img src="images/icon/Enishi_LOGO_NoText.svg" alt="Logo">
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navAndicon">
+                <div class="sideNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <!-- <li><a href="news.html">News</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="sideSNS-icon">
+                    <a class="SNStile" href="#"><img src="images/icon/X_logo.svg" alt="X_icon"></a>
+                    <a class="SNStile" href=""><img src="images/icon/Instagram_Glyph_White.svg"
+                            alt="Instagram_icon"></a></a>
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
-    <main>
-        <div class="container">
+
+    </div>
+
+    <div class="mainImage">
+        <img src="images/manju01.jpg" alt="image01">
+    </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="indexContainer">
+            <div class="contentsTitle">
+                <h2>縁-えにし-について</h2>
+                <h3>about -Enishi-</h3>
+            </div>
+
+            <div class="contents">
+                <p>大学内にできた、新しいスイーツ店．</p>
+                <p>小腹が空いたとき、嬉しいことがあったとき、悲しいことがあったとき、</p>
+                <p>いつでも、いつまでも、あなたとご縁があってほしい．</p>
+
+
+            </div>
+            <a href="about.html" class="button">もっと見る</a>
+        </div>
+
+        <div class="indexContainer">
+            <div class="contentsTitle">
+                <h2>商品一覧</h2>
+                <h3>menu</h3>
+            </div>
+            <div class="contents center_P">
+                <p>ちょこっと休憩にも、みんなでお茶会にも。</p>
+                <p>和菓子でほっとしませんか。</p>
+
+                <div class="imageTile">
+                    <a href="#"><img src="images/S__49094714_0.jpg" alt="#"></a>
+                    <a href="#"><img src="images/dorayaki01.jpg" alt="#"></a>
+                    <a href="#"><img src="images/manju01.jpg" alt="#"></a>
+                    <a href="#"><img src="images/matchaLatte.jpg" alt="#"></a>
+                </div>
+
+
+            </div>
+            <a href="menu.html" class="button">もっと見る</a>
 
         </div>
 
-        <div class="container">
+        <!-- <div class="indexContainer">
+            <div class="contentsTitle">
+                <h2>新着情報</h2>
+                <h3>news</h3>
+            </div>
+            <div class="contents">
 
+                <ul class="newsList">
+
+                    <dl>
+                        <a class="newsData" href="#">
+                            <dt>2025.04.14</dt>
+                            <dd>縁-えにし-がオープンしました。</dd>
+                        </a>
+
+                        <a class="newsData" href="#">
+                            <dt>2025.04.14</dt>
+                            <dd>縁-えにし-がオープンしました。</dd>
+                        </a>
+
+                        <a class="newsData" href="#">
+                            <dt>2025.04.14</dt>
+                            <dd>縁-えにし-がオープンしました。</dd>
+                        </a>
+
+                    </dl>
+
+                </ul>
+
+            </div>
+
+            <a href="#" class="button">もっと見る</a>
+        </div> -->
+
+    </div>
+
+    <div class="footer">
+        <div class="footerContainer">
+            <img class="footerLogo" src="images/icon/Enishi_LOGO.svg" alt="">
+
+            <div class="footerContents">
+                <div class="footerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <!-- <li><a href="news.html">News</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
         </div>
 
-    </main>
-
-    <footer>
-
-        <div class="logo">
-            <img src="#" alt="logo">
+        <div class="footerContents">
+            <div class="address">
+                <p>〒462-0846 愛知県名古屋市北区名城2丁目4番1</p>
+                <p>名古屋造形大学内</p>
+            </div>
+            <p class="copy-r">©2024 Enishi</p>
         </div>
 
-        <div class="footerNav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </footer>
+    </div>
+
+    <script>
+        $('.hamburger').click(function () {
+            $('.navAndicon').toggleClass('viewMenu');
+            $('.hamburger').toggleClass('hamburgerClose');
+        });
+
+
+        $(document).ready(function () {
+            $('.imageTile').slick({
+                autoplay: true,
+                speed: 500,
+                dots: false,
+                fade: false,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                appendArrows: $('.arrowsBox2'),
+                centerMode: true,
+                centerPadding: '0',
+
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            fade: true,
+                            centerMode: false,
+
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>
